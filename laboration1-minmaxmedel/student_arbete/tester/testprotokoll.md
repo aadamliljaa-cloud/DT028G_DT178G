@@ -1,88 +1,33 @@
-# Testprotokoll
+# Testprotokoll – Laboration 1
 
-## Syfte
+## Test 1 – Positiva heltal
 
-Börja med små testfall där du själv kan beräkna rätt resultat. På så sätt jämför du programmet med ett resultat som har bestämts oberoende av programmet. Detta arbetssätt förbereder dig för automatiserad testning med testramverk som `unittest`.
+Indata: 5 12 8 3
 
-Dokumentera minst tre egna testfall. Välj testfallen så att de tillsammans undersöker  **olika egenskaper och situationer** , exempelvis ett normalfall, ett gränsfall och ett specialfall. För varje testfall ska du ange:
+Förväntat minsta värde: 3
+Förväntat största värde: 12
+Förväntat medelvärde: 7
 
-* vilka indata som används,
-* vilket resultat du förväntar dig,
-* vilket resultat programmet ger,
-* om testet är godkänt eller inte.
+## Test 2 – Negativa heltal
 
----
+Indata: -5 -12 -3 -8
 
-## Eget test 1
+Förväntat minsta värde: -12
+Förväntat största värde: -3
+Förväntat medelvärde: -7
 
-**Vad vill du kontrollera med testet?**
+## Test 3 – Blandade heltal och noll
 
-**Indata:**
+Indata: -10 0 5 9
 
-**Förväntat minimum:**
+Förväntat minsta värde: -10
+Förväntat största värde: 9
+Förväntat medelvärde: 1
 
-**Förväntat maximum:**
+## Test 4 - Stora datamängden
 
-**Förväntat medelvärde:**
+Indata: data/values.txt
 
-**Programmets resultat:**
-
-**Godkänt:** Ja / Nej
-
----
-
-## Eget test 2
-
-**Vad vill du kontrollera med testet?**
-
-**Indata:**
-
-**Förväntat minimum:**
-
-**Förväntat maximum:**
-
-**Förväntat medelvärde:**
-
-**Programmets resultat:**
-
-**Godkänt:** Ja / Nej
-
----
-
-## Eget test 3
-
-**Vad vill du kontrollera med testet?**
-
-**Indata:**
-
-**Förväntat minimum:**
-
-**Förväntat maximum:**
-
-**Förväntat medelvärde:**
-
-**Programmets resultat:**
-
-**Godkänt:** Ja / Nej
-
----
-
-# Slutlig körning med values.txt
-
-När de små testerna är godkända kör du:
-
-```bash
-./minmax < data/values.txt
-```
-
-Dokumentera programmets resultat:
-
-**Minimum:**
-
-**Maximum:**
-
-**Medelvärde:**
-
-## Kort slutsats
-
-Skriv 1-3 meningar om vad dina tester ger dig för anledning att tro om programmets korrekthet.
+Minsta värde: -8
+Största värde: 991
+Medelvärde: 489.153
