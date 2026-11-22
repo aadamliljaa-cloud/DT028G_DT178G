@@ -5,4 +5,4 @@ minmax.exe: src/main.cpp
 	$(CXX) $(CXXFLAGS) src/main.cpp -o minmax.exe
 
 clean:
-	$(RM) minmax.exe
+	del /Q minmax.exe
