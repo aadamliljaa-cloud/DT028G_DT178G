@@ -1,5 +1,8 @@
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++17
 
-# Skapa projektets/laborationens Makefile här.
+minmax.exe: src/main.cpp
+	$(CXX) $(CXXFLAGS) src/main.cpp -o minmax.exe
 
-# Använd exemplen i föreläsningsanteckningarna som stöd, men anpassa
-# Makefile-filen till projektets/laborationens katalogstruktur och källfiler.
+clean:
+	$(RM) minmax.exe
